@@ -42,7 +42,7 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700&family=DM+Mono&display=swap&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://transparency.dev/css/styles.min.842c99185867490265ab2de54f1033e2a0f9b0b759f1e6c09b65868537248ae6.css" integrity="sha256-hCyZGFhnSQJlqy3lTxAz4qD5sLdZ8ebAm2WGhTckiuY=">
+  <link rel="stylesheet" href="https://transparency.dev/css/styles.min.23bbbdf08e68ae404f6dcc666521c2f4bb1e5fa1892fa4d41bb8601d407aa603.css" integrity="sha256-I7u98I5orkBPbcxmZSHC9LseX6GJL6TUG7hgHUB6pgM=">
     <script>
       'use strict';
 
@@ -96,6 +96,7 @@
     <li class="text-right inline mr-6"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
     <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
     <li class="text-right inline mr-6"><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+    <li class="text-right inline mr-6"><a href="https://blog.transparency.dev" class="text-Grey-600 hover:no-underline">Blog</a></li>
   </ul>
 </nav>
 <ul id="mobileMenu" class="hidden bg-white p-8 fixed w-full z-50">
@@ -103,7 +104,8 @@
   <li class="gmb-2"><a href='/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
   <li class="gmb-2"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
   <li class="gmb-2"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
-  <li class=""><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+  <li class="gmb-2"><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+  <li class=""><a href="https://blog.transparency.dev" class="text-Grey-600 hover:no-underline">Blog</a></li>
 </ul>
 </div>
 <div id="nav-spacer" class="h-16"></div>
@@ -302,10 +304,10 @@ The package manager verifies the answer from the hash database and compares the 
 <li><strong>Introduce a feedback loop on failures</strong> - sharing verification failures with people familiar with the whole system takes the burden off the end-user and makes it more likely malicious changes will be detected.</li>
 </ul>
 <h2 id="examples">Examples</h2>
-<p>This is implemented in production for Golang with a <a href="https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md">checksum database</a> and <a href="https://blog.golang.org/module-mirror-launch">module mirror</a>.</p>
+<p>This is implemented in production for Go with a <a href="https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md">checksum database</a> and <a href="https://blog.golang.org/module-mirror-launch">module mirror</a>.</p>
 <h2 id="further-resources">Further resources</h2>
 <ul>
-<li><a href="https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md">Proposal: Secure the Public Go Module Ecosystem</a> describes the checksum database that forms Golang’s approach to this pattern.</li>
+<li><a href="https://go.googlesource.com/proposal/+/master/design/25530-sumdb.md">Proposal: Secure the Public Go Module Ecosystem</a> describes the checksum database that forms Go’s approach to this pattern.</li>
 <li><a href="https://www.youtube.com/watch?v=KqTySYYhPUE&amp;t=15m0s">GopherCon 2019: Katie Hockman - Go Module Proxy: Life of a Query</a> -
 Talk from GopherCon explaining how Go achieves 1) - talk from GopherCon explaining how Go achieves 1) reproducible builds, 2) persistent dependencies and 3) trustworthy fetches. Point 3) goes into detail about the checksum database, starting at 15:00.</li>
 <li><a href="https://pretired.dazwilkin.com/posts/200429/">Rust implementation of Crate Transparency using Google Trillian</a> and <a href="https://pretired.dazwilkin.com/posts/190926/">PyPi Transparency</a>

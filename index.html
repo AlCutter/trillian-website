@@ -19,7 +19,7 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.72.0" />
+	<meta name="generator" content="Hugo 0.83.1" />
     <meta charset="utf-8">
     <title>
       
@@ -43,7 +43,7 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Google+Sans:wght@400;500;700&family=DM+Mono&display=swap&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://transparency.dev/css/styles.min.842c99185867490265ab2de54f1033e2a0f9b0b759f1e6c09b65868537248ae6.css" integrity="sha256-hCyZGFhnSQJlqy3lTxAz4qD5sLdZ8ebAm2WGhTckiuY=">
+  <link rel="stylesheet" href="https://transparency.dev/css/styles.min.23bbbdf08e68ae404f6dcc666521c2f4bb1e5fa1892fa4d41bb8601d407aa603.css" integrity="sha256-I7u98I5orkBPbcxmZSHC9LseX6GJL6TUG7hgHUB6pgM=">
     <script>
       'use strict';
 
@@ -97,6 +97,7 @@
     <li class="text-right inline mr-6"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
     <li class="text-right inline mr-6"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
     <li class="text-right inline mr-6"><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+    <li class="text-right inline mr-6"><a href="https://blog.transparency.dev" class="text-Grey-600 hover:no-underline">Blog</a></li>
   </ul>
 </nav>
 <ul id="mobileMenu" class="hidden bg-white p-8 fixed w-full z-50">
@@ -104,7 +105,8 @@
   <li class="gmb-2"><a href='/how-to-design-a-verifiable-system/' class="text-Grey-600 hover:no-underline">Verifiable Design</a></li>
   <li class="gmb-2"><a href='/#trillian' class="text-Grey-600 hover:no-underline">Trillian</a></li>
   <li class="gmb-2"><a href='/verifiable-data-structures/' class="text-Grey-600 hover:no-underline">Verifiable Data Structures</a></li>
-  <li class=""><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+  <li class="gmb-2"><a href='/articles/' class="text-Grey-600 hover:no-underline">Articles</a></li>
+  <li class=""><a href="https://blog.transparency.dev" class="text-Grey-600 hover:no-underline">Blog</a></li>
 </ul>
 </div>
 <div id="nav-spacer" class="h-16"></div>
@@ -196,7 +198,7 @@
       </p>
       <p class="gmb-3">
         Building with tamper-evident logs means you can <strong>cryptographically prove that the data hasn’t been
-        unexpectedly changed</strong>. Knowing the providence, integrity and sequence your data was created means
+        unexpectedly changed</strong>. Knowing the provenance, integrity and sequence your data was created means
         you’ll be able to monitor third-party ecosystems and simplify regulatory compliance. You can trust
         the data you rely on.
       </p>
@@ -206,6 +208,39 @@
         <strong>This is an example of a verifiable system</strong>. You could use them to track credits
         and debits in banking transactions, access logs to sensitive healthcare records, cryptographic hashes
         of software packages, compliance artifacts of regulated activities, or modifications to a document.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="glue-page gpb-8">
+  <div class="glue-grid gpt-6">
+    <div class="col-span-4 sm:col-span-10 sm:col-start-2 lg:col-span-4 lg:col-start-2">
+      <h2 class="headline2 gmb-4">
+        Join the Community
+      </h2>
+    </div>
+    <div class="col-span-4 sm:col-span-10 sm:col-start-2 lg:col-span-6">
+      <p class="gmb-2 headline5 intro-para">
+        Welcome to Transparency.dev, a community dedicated to promoting transparency across various ecosystems and pioneering its integration into new application domains.
+      </p>
+      <p class="gmb-2 headline5 intro-para">
+        Get started by joining our <a href="https://join.slack.com/t/transparency-dev/shared_invite/zt-27pkqo21d-okUFhur7YZ0rFoJVIOPznQ">Slack Channel <nobr>
+          
+
+<svg class="inline" width="12px" height="17px" viewBox="0 0 12 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
+  <polygon points="9.469 7.5547 9.469 0.7266 2.633 0.7266 2.633 2.1953 6.969 2.1953 0.734 8.4141 1.773 9.4531 8 3.2266 8 7.5547"></polygon>
+</svg>
+</nobr></a> 
+      </p>
+      <p class="gmb-4 headline5 intro-para">
+        Meet the community in person at our upcoming Transparency.dev Summit! 
+      </p>
+
+      <p>
+        <a href="/summit/" class="btn bg-Blue-600 text-white hover:shadow-md inline-flex px-8 items-center justify-center">
+          Attend Transparency.dev Summit
+        </a>
       </p>
     </div>
   </div>
@@ -382,7 +417,7 @@
         </li>
         <li>
           <p class="gmb-1">
-            Tamper-evident logs can frustrates software supply chain attacks by providing a shared, global view of the content of packages.
+            Tamper-evident logs can frustrate software supply chain attacks by providing a shared, global view of the content of packages.
           </p>
           <p>
             <a href="/application/add-tamper-checking-to-a-package-manager/">
@@ -557,18 +592,18 @@
   
 
 <li class="reference-card-list-item">
-  <a href="https://github.com/google/trillian-examples/tree/master/registers" class="text-Grey-700 gpt-4 gpb-4 block link-arrow-a-tag reference-link">
+  <a href="https://github.com/google/trillian-examples/tree/master/helloworld" class="text-Grey-700 gpt-4 gpb-4 block link-arrow-a-tag reference-link">
     <div class="glue-grid grids-col-4 sm:grid-cols-10">
       <div class="col-span-3 sm:col-span-8">
         <h3 class="headline5 gmb-1 font-meidum">
-          Start logging with Trillian
+          Hello Trillian
           <span class="logo-icon"><svg width="33px" height="100%" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
   <path d="M16.288,2.84217094e-14 C7.294,2.84217094e-14 -2.84217094e-14,7.293 -2.84217094e-14,16.29 C-2.84217094e-14,23.487 4.667,29.592 11.14,31.746 C11.955,31.896 12.252,31.393 12.252,30.961 C12.252,30.575 12.238,29.55 12.23,28.191 C7.699,29.175 6.743,26.007 6.743,26.007 C6.002,24.125 4.934,23.624 4.934,23.624 C3.455,22.614 5.046,22.634 5.046,22.634 C6.681,22.749 7.541,24.313 7.541,24.313 C8.994,26.802 11.354,26.083 12.282,25.666 C12.43,24.614 12.851,23.896 13.316,23.489 C9.699,23.078 5.896,21.68 5.896,15.438 C5.896,13.66 6.531,12.205 7.573,11.067 C7.405,10.655 6.846,8.998 7.733,6.756 C7.733,6.756 9.1,6.318 12.212,8.426 C13.511,8.064 14.905,7.884 16.29,7.877 C17.674,7.884 19.067,8.064 20.368,8.426 C23.478,6.318 24.843,6.756 24.843,6.756 C25.732,8.998 25.173,10.655 25.006,11.067 C26.05,12.205 26.68,13.66 26.68,15.438 C26.68,21.696 22.871,23.073 19.243,23.476 C19.827,23.979 20.348,24.973 20.348,26.493 C20.348,28.67 20.328,30.427 20.328,30.961 C20.328,31.397 20.622,31.904 21.448,31.745 C27.916,29.586 32.579,23.485 32.579,16.29 C32.579,7.293 25.285,2.84217094e-14 16.288,2.84217094e-14"></path>
 </svg>
 </span>
         </h3>
         <p>
-          Get started with Trillian by working through our transparent government registers example
+          This is a basic example of how to use Trillian to implement the operations needed for a verifiable log.
         </p>
       </div>
       <div class="col-span-1 sm:col-span-2 sm:col-span-2 flex items-center justify-center">
@@ -599,36 +634,6 @@
         </h3>
         <p>
           Employees at your company can post to a public messaging platform ‘Tritter’. Since Tritter doesn’t support multi-login, TritBot uses Trillian to log each message request with the details of the sender in order to discourage abuse.
-        </p>
-      </div>
-      <div class="col-span-1 sm:col-span-2 sm:col-span-2 flex items-center justify-center">
-        <div class="link-arrow-svg text-Blue-600">
-          <svg width="23px" height="18px" viewBox="0 0 23 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
-    <path d="M13.0606602,-0.0606601718 L22.1213203,9 L13.0606602,18.0606602 L10.9393398,15.9393398 L16.3789414,10.4993398 L0.439941406,10.5 L0.439941406,7.5 L16.3789414,7.49933983 L10.9393398,2.06066017 L13.0606602,-0.0606601718 Z"></path>
-</svg>
-
-        </div>
-      </div>
-    </div>
-  </a>
-</li>
-
-
-  
-
-<li class="reference-card-list-item">
-  <a href="https://github.com/google/trillian-examples/blob/master/etherslurp" class="text-Grey-700 gpt-4 gpb-4 block link-arrow-a-tag reference-link">
-    <div class="glue-grid grids-col-4 sm:grid-cols-10">
-      <div class="col-span-3 sm:col-span-8">
-        <h3 class="headline5 gmb-1 font-meidum">
-          Pull blockchain transactions into a Trillian Map
-          <span class="logo-icon"><svg width="33px" height="100%" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
-  <path d="M16.288,2.84217094e-14 C7.294,2.84217094e-14 -2.84217094e-14,7.293 -2.84217094e-14,16.29 C-2.84217094e-14,23.487 4.667,29.592 11.14,31.746 C11.955,31.896 12.252,31.393 12.252,30.961 C12.252,30.575 12.238,29.55 12.23,28.191 C7.699,29.175 6.743,26.007 6.743,26.007 C6.002,24.125 4.934,23.624 4.934,23.624 C3.455,22.614 5.046,22.634 5.046,22.634 C6.681,22.749 7.541,24.313 7.541,24.313 C8.994,26.802 11.354,26.083 12.282,25.666 C12.43,24.614 12.851,23.896 13.316,23.489 C9.699,23.078 5.896,21.68 5.896,15.438 C5.896,13.66 6.531,12.205 7.573,11.067 C7.405,10.655 6.846,8.998 7.733,6.756 C7.733,6.756 9.1,6.318 12.212,8.426 C13.511,8.064 14.905,7.884 16.29,7.877 C17.674,7.884 19.067,8.064 20.368,8.426 C23.478,6.318 24.843,6.756 24.843,6.756 C25.732,8.998 25.173,10.655 25.006,11.067 C26.05,12.205 26.68,13.66 26.68,15.438 C26.68,21.696 22.871,23.073 19.243,23.476 C19.827,23.979 20.348,24.973 20.348,26.493 C20.348,28.67 20.328,30.427 20.328,30.961 C20.328,31.397 20.622,31.904 21.448,31.745 C27.916,29.586 32.579,23.485 32.579,16.29 C32.579,7.293 25.285,2.84217094e-14 16.288,2.84217094e-14"></path>
-</svg>
-</span>
-        </h3>
-        <p>
-          Sync Ethereum transactions into a Trillian Log, then replay the transactions into a Trillian Map.
         </p>
       </div>
       <div class="col-span-1 sm:col-span-2 sm:col-span-2 flex items-center justify-center">
